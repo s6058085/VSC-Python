@@ -72,11 +72,11 @@ def main():
 
         if option == "1":
             calculateBasicCost()
-        elif option == "2":
+        if option == "2":
             calculateStandardCost()
-        elif option == "3":
+        if option == "3":
             calculateLuxuryCost()
-        elif option == "4":
+        if option == "4":
             exit()
         else:
             print("Please select a correct option")
