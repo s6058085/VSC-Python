@@ -1,6 +1,6 @@
 # Program that calculates carpet stuff
 
-# Global decleration 
+# Global decleration # Depricated Function
 # global fitting
 
 # fitting = 3.75
