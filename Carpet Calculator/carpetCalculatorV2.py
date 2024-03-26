@@ -1,9 +1,9 @@
 # Program that calculates carpet stuff
 
 # Global decleration 
-global fitting
+# global fitting
 
-fitting = 3.75
+# fitting = 3.75
 
 
 # Validate inputs Function
@@ -22,12 +22,13 @@ def areaOfRectangle():
         else:
             area = num1 * num2
             return area
+            break
 
 
 # Calculates the basic cost
 def calculateBasicCost():
-    basic = 6.50
-    total = basic + fitting
+    basic = 10.25 # 6.50
+    total = basic
     
     area = areaOfRectangle()
 
@@ -39,8 +40,8 @@ def calculateBasicCost():
 # Calculates the standard cost
 def calculateStandardCost():
     areaOfRectangle()
-    standard = 18.75
-    total = standard + fitting
+    standard = 22.50 # 18.75
+    total = standard
 
     area = areaOfRectangle()
 
@@ -52,8 +53,8 @@ def calculateStandardCost():
 # Calculates the luxury cost
 def calculateLuxuryCost():
     areaOfRectangle()
-    luxury = 29.50
-    total = luxury + fitting
+    luxury = 32.25 # 29.50
+    total = luxury
 
     area = areaOfRectangle()
 
