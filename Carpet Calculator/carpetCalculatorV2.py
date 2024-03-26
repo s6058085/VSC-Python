@@ -20,6 +20,7 @@ def areaOfRectangle():
         except AssertionError:
             print("Please enter a valid number.")
         else:
+            global area
             area = num1 * num2
             return area
             break
@@ -27,10 +28,11 @@ def areaOfRectangle():
 
 # Calculates the basic cost
 def calculateBasicCost():
+    areaOfRectangle()
     basic = 10.25 # 6.50
     total = basic
     
-    area = areaOfRectangle()
+    # area = areaOfRectangle()
 
     cost = total * area
 
@@ -43,7 +45,7 @@ def calculateStandardCost():
     standard = 22.50 # 18.75
     total = standard
 
-    area = areaOfRectangle()
+    # area = areaOfRectangle()
 
     cost = total * area
 
@@ -56,7 +58,7 @@ def calculateLuxuryCost():
     luxury = 32.25 # 29.50
     total = luxury
 
-    area = areaOfRectangle()
+    # area = areaOfRectangle()
 
     cost = total * area
 
