@@ -1,0 +1,43 @@
+FUNCTION area_of_rectangle
+    WHILE True
+        VARIABLE num1 is INPUT SEND "What is the lenght of your room" TO DISPLAY 
+        VARIABLE num2 is INPUT SEND "What is the width of your room" TO DISPLAY 
+        VARIABLE area = num1 * num2
+        RETURN area
+
+FUNCTION calculate_basic_cost
+    VARIABLE basic = 10.25
+    VARIABLE cost = basic * area
+
+    SEND "Your total cost for your (Area variable number) is: (Cost variable output)" TO DISPLAY 
+
+FUNCTION calculate_Standard_cost
+    VARIABLE Standard = 22.50
+    VARIABLE cost = Standard * area
+
+    SEND "Your total cost for your (Area variable number) is: (Cost variable output)" TO DISPLAY
+
+FUNCTION calculate_luxury_cost
+    VARIABLE luxury = 32.25
+    VARIABLE cost = luxury * area
+
+    SEND "Your total cost for your (Area variable number) is: (Cost variable output)" TO DISPLAY
+
+FUNCTION main  
+    WHILE TRUE
+        SEND "1.) basic, 2.) Standard, 3.) Luxury, 4.) Exit" TO DISPLAY
+        VARIABLE option = INPUT SEND "What option of carpet would you like? " TO DISPLAY
+
+        IF option EQUAL TO 1 THEN
+            GO TO FUNCTION calculate_basic_cost
+        IF option EQUAL TO 2 THEN
+            GO TO FUNCTION calculate_standard_cost
+        IF option EQUAL TO 3 THEN
+            GO TO FUNCTION calculate_luxury_cost
+        IF option EQUAL TO 4 THEN
+            END PROGRAM
+        ELSE THEN
+            SEND "Please select a correct option" TO DISPLAY
+
+IF NAME IS EQUAL TO Main
+    INITALISE main FUNCTION
